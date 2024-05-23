@@ -1,4 +1,4 @@
-# [Official] Enhancing Federated Representation via Multi-Head Mutual-Distillation
+# Enhancing Federated Representation via Multi-Head Mutual-Distillation
 
 
 
