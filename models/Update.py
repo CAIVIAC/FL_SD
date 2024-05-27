@@ -124,7 +124,7 @@ class LocalUpdate(object):
                             KD_Idx_reverse = y_pred_reverse.eq(labels.data)
                             if any(KD_Idx_reverse):
                                 loss_kd  += nn.KLDivLoss(log_target=True)(nn.functional.log_softmax(logits_final[KD_Idx_reverse] / Temporature, dim=-1), nn.functional.log_softmax(logits_aux[l][KD_Idx_reverse] / Temporature, dim=-1)) * (Temporature**2) 
-                    loss = self.loss_func(logits_final, labels) * 1 +  loss_aux*0.01 + loss_kd*1
+                    loss = self.loss_func(logits_final, labels) * 1 +  loss_aux*10 + loss_kd*1
                     optimizer.zero_grad()
                     loss.backward()
                     optimizer.step()
