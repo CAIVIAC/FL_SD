@@ -31,8 +31,7 @@ Federated Learning is a framework that aims to improve a single global model acr
   $ conda create --name fl_sd python=3.9 -y
   $ conda activate fl_sd
   $ pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
-  # Please refer to ./scripts folder for running scripts
-  $ EX: bash ./scripts/run_fedavg.sh
+  $ bash ./scripts/run_fedours.sh
 ``` 
 
 
